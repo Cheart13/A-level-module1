@@ -465,22 +465,22 @@ header {
 
   .img_block {
     display: flex;
-
+    //position: relative;
     margin-left: 10px;
     box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-    overflow: hidden;
+    //overflow: hidden;
     flex-shrink: 2;
     flex-grow: 1;
     min-width: 290px;
-    max-width: 670px;
+    max-width: 650px;
+    min-height: 200px;
+    max-height: 400px;
+    justify-content: center;
+    align-items: center;
 
     @media (max-width: 568px) {
       margin: 20px 0;
-    }
-    img {
-      width: 100%;
-      height: auto;
     }
   }
   .text_block {
@@ -629,6 +629,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: stretch;
+
   @media (max-width: 780px) {
     flex-direction: column;
   }
@@ -641,9 +642,10 @@ header {
   .fas,
   .far,
   .fab {
-    font-size: 18px;
+    font-size: inherit;
   }
   .SN_icons {
+    font-size: 30px;
     margin: 20px 10px;
     display: flex;
     flex-direction: row;
@@ -682,8 +684,10 @@ header {
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-
-      p {
+      i {
+        font-size: 18px;
+      }
+      a {
         padding-left: 20px;
       }
     }
