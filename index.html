@@ -18,28 +18,45 @@
 	<header>
 		<div class="logo"><img src="./img/logo.png" alt="logo"></div>
 
-		<div class="menu_burger">
+		<!--<div class="menu_burger">
 			<a href="#" class='burgermenu'>
 				<span class="burger_menu_rows"></span>
 				<span class="burger_menu_rows"></span>
 				<span class="burger_menu_rows"></span>
 			</a>
-		</div>
+		</div>-->
+		<input id="burger" type="checkbox" />
+		<label for="burger">
+    		<span></span>
+    		<span></span>
+    		<span></span>
+		</label>
 
-		<nav class="menu bolder">
-			<li><a href="">About us</a> </li>
-			<li><a href="">Reservation</a></li>
-			<li><a href="">Gallery</a></li>
-			<li><a href="">Blog</a></li>
-			<li><a href="">Elements</a></li>
-			<li><a href="">Shop</a></li>
+		<nav>    
+  			<ul>
+    			<li><a href="#about">About us</a> </li>
+    			<li><a href="#regist">Reservation</a></li>
+    			<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#programs">Blog</a></li>
+				<li><a href="#elements">Elements</a></li>
+				<li><a href="#prices">Shop</a></li>
+  			</ul>  
 		</nav>
+
+		<div class="menu bolder">
+			<li><a href="#about">About us</a> </li>
+    		<li><a href="#regist">Reservation</a></li>
+    		<li><a href="#gallery">Gallery</a></li>
+			<li><a href="#programs">Blog</a></li>
+			<li><a href="#elements">Elements</a></li>
+			<li><a href="#prices">Shop</a></li>
+		</div>
 
 	</header>
 
 	<main>
 		<div class="bg1">
-			<div class="login_div">
+			<div id="regist" class="login_div">
 
 				<form action="" class="login_block">
 					<h3 class="bolder">Trial class</h3>
@@ -62,7 +79,7 @@
 			</div>
 		</div>
 
-		<div class="programs_div">
+		<div id="programs" class="programs_div">
 			<div>
 				<h2 class="bold">Yoga feature program</h2>
 				<p class="frestyle-txt">Our classes</p>
@@ -118,7 +135,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="img_div">
+		<div id="gallery" class="img_div">
 			<!--images 05-12-->
 			<div class="img_container">
 				<div class="item"><img src="./img/img-05.jpg" alt=""></div>
@@ -131,7 +148,7 @@
 				<div class="item"><img src="./img/img-12.jpg" alt=""></div>
 			</div>
 		</div>
-		<div class="about_div">
+		<div id="about" class="about_div">
 			<div class="about_container">
 				<div class='img_block'>
 					<img src="./img/img-13.jpg" alt="">
@@ -147,7 +164,7 @@
 			</div>
 		</div>
 		<div class="bg2">
-			<div class="promises_div white-txt">
+			<div id="elements" class="promises_div white-txt">
 				<div class="promises_continer">
 					<div class="promise_block">
 						<div class="promise_img_block"><img src="./img/ico-01.png" alt=""></div>
@@ -201,7 +218,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="bg3">
+		<div id="prices" class="bg3">
 			<div class="prices_div">
 				<div class="container">
 					<div class="price_block">
