@@ -32,7 +32,7 @@ body {
   }
 }
 
-@media (max-width: 541px) {
+@media (max-width: 568px) {
   .frestyle-txt {
     font-size: 20px;
   }
@@ -50,7 +50,7 @@ h2 {
   font-size: 30px;
 }
 
-@media (max-width: 541px) {
+@media (max-width: 568px) {
   h2 {
     font-size: 24px;
     padding: 0px 20px;
@@ -95,10 +95,45 @@ header {
   z-index: 2;
 }
 
-@media (max-width: 541) {
+@media (max-width: 568px) {
   header .logo {
     justify-self: flex-start;
   }
+}
+
+header .menu_burger {
+  display: none;
+  z-index: 5;
+}
+
+header .menu_burger span {
+  display: block;
+}
+
+@media (max-width: 690px) {
+  header .menu_burger {
+    display: block;
+    height: 50%;
+  }
+}
+
+header .menu_burger span.burger_menu_rows,
+header .menu_burger span.burger_menu_rows::before,
+header .menu_burger span.burger_menu_rows::after {
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  background-color: #5363DB;
+  z-index: 4;
+  top: 50px;
+}
+
+header .menu_burger .burger_menu_rows::before {
+  top: 35px;
+}
+
+header .menu_burger .burger_menu_rows::after {
+  top: 65px;
 }
 
 header .menu {
@@ -312,7 +347,7 @@ header .menu li {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding-top: 2%;
+  padding: 5% 0;
 }
 
 @media (max-width: 541px) {
@@ -327,7 +362,7 @@ header .menu li {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
   min-width: 280px;
-  min-height: 350px;
+  min-height: 430px;
   -webkit-box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.1);
   display: -webkit-box;
@@ -350,7 +385,6 @@ header .menu li {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: justify;
-    margin: 20px;
   }
 }
 
@@ -372,7 +406,7 @@ header .menu li {
 
 @media (max-width: 541px) {
   .program_block .text {
-    padding: 30px;
+    padding: 20px;
   }
 }
 
@@ -447,8 +481,21 @@ header .menu li {
       align-content: stretch;
 }
 
+.img_div .img_container .item {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+@media (max-width: 541px) {
+  .img_div .img_container .item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
 .img_div .img_container img {
-  width: 25%;
+  width: 100%;
+  height: 100%;
 }
 
 .about_div {
@@ -502,6 +549,13 @@ header .menu li {
   }
 }
 
+@media (max-width: 541px) {
+  .about_container {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+}
+
 .about_container .img_block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -516,38 +570,19 @@ header .menu li {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  min-width: 300px;
-  max-width: 570px;
-  min-height: -webkit-min-content;
-  min-height: -moz-min-content;
-  min-height: min-content;
+  min-width: 290px;
+  max-width: 670px;
+}
+
+@media (max-width: 568px) {
+  .about_container .img_block {
+    margin: 20px 0;
+  }
 }
 
 .about_container .img_block img {
-  -ms-flex-negative: 1.5;
-      flex-shrink: 1.5;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  min-width: 300px;
-}
-
-@media (min-width: 1000px) {
-  .about_container .img_block img {
-    max-height: none;
-  }
-}
-
-@media (max-width: 1000px) {
-  .about_container .img_block img {
-    max-height: 220px;
-  }
-}
-
-@media (max-width: 780px) {
-  .about_container .img_block img {
-    max-height: 200px;
-  }
+  width: 100%;
+  height: auto;
 }
 
 .about_container .text_block {
@@ -601,7 +636,7 @@ header .menu li {
   margin: 10px;
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
-  min-width: 150px;
+  min-width: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -679,7 +714,7 @@ header .menu li {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  min-width: 300px;
+  min-width: 290px;
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
   -webkit-box-shadow: 6px 6px 50px 0px rgba(0, 0, 0, 0.1);
@@ -791,7 +826,7 @@ header .menu li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-width: 150px;
+  min-width: 160px;
   max-width: 300px;
 }
 
@@ -812,6 +847,12 @@ header .menu li {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+@media (max-width: 541px) {
+  .about_contact .contact_block {
+    display: none;
+  }
 }
 
 .about_contact .contact_block .contacts {
