@@ -8,7 +8,7 @@
 
 body {
   padding-top: 100px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 14px;
   line-height: 1.6;
   color: #555555;
@@ -16,7 +16,7 @@ body {
 }
 
 .frestyle-txt {
-  font-family: 'Calligraffitti';
+  font-family: "Calligraffitti";
   font-size: 40px;
 }
 
@@ -42,7 +42,8 @@ body {
   color: #ffffff;
 }
 
-h2, h3 {
+h2,
+h3 {
   text-transform: uppercase;
 }
 
@@ -125,7 +126,7 @@ header .menu_burger .burgermenu span.burger_menu_rows {
   position: absolute;
   width: 40px;
   height: 5px;
-  background-color: #5363DB;
+  background-color: #5363db;
   z-index: 4;
   top: 50px;
 }
@@ -147,7 +148,7 @@ header .menu {
           box-sizing: content-box;
 }
 
-@media (max-width: 690px) {
+@media (max-width: 768px) {
   header .menu {
     display: none;
   }
@@ -158,13 +159,13 @@ header .menu li {
 }
 
 header .menu li a:hover {
-  color: #5363DB;
-  text-shadow: 1px 1px 3px #5363DB;
+  color: #5363db;
+  text-shadow: 1px 1px 3px #5363db;
 }
 
 header .menu li a::after:hover {
-  content: '-';
-  color: #5363DB;
+  content: "-";
+  color: #5363db;
   position: relative;
   left: 50%;
   top: 1em;
@@ -315,7 +316,7 @@ header .menu li a::after:hover {
   border-radius: 5px;
 }
 
-.login_block input[type='submit'] {
+.login_block input[type="submit"] {
   background-color: #5b6ceb;
   font-size: 1.2em;
   font-weight: 700;
@@ -741,7 +742,7 @@ header .menu li a::after:hover {
   padding-bottom: 3%;
 }
 
-.prices_div .price_block input[type='button'] {
+.prices_div .price_block input[type="button"] {
   background-color: #5b6ceb;
   font-size: 1.2em;
   font-weight: 700;
@@ -786,7 +787,7 @@ header .menu li a::after:hover {
 }
 
 .prices_div .price .dolar::before {
-  content: '$  ';
+  content: "$  ";
 }
 
 .about_contact {
@@ -824,7 +825,9 @@ header .menu li a::after:hover {
       flex-basis: 45%;
 }
 
-.about_contact .fas, .about_contact .far, .about_contact .fab {
+.about_contact .fas,
+.about_contact .far,
+.about_contact .fab {
   font-size: 18px;
 }
 
