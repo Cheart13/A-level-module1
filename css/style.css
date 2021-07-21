@@ -102,8 +102,12 @@ header {
 }
 
 header .menu_burger {
+  padding-left: 20px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
   display: none;
-  z-index: 5;
+  z-index: 4;
 }
 
 header .menu_burger span {
@@ -117,33 +121,30 @@ header .menu_burger span {
   }
 }
 
-header .menu_burger span.burger_menu_rows,
-header .menu_burger span.burger_menu_rows::before,
-header .menu_burger span.burger_menu_rows::after {
+header .menu_burger .burgermenu span.burger_menu_rows {
   position: absolute;
   width: 40px;
-  height: 6px;
+  height: 5px;
   background-color: #5363DB;
   z-index: 4;
   top: 50px;
 }
 
-header .menu_burger .burger_menu_rows::before {
+header .menu_burger .burgermenu .burger_menu_rows:first-child {
   top: 35px;
 }
 
-header .menu_burger .burger_menu_rows::after {
+header .menu_burger .burgermenu .burger_menu_rows:last-child {
   top: 65px;
 }
 
 header .menu {
-  display: inline;
-  list-style: none;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  list-style: none;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 @media (max-width: 690px) {
@@ -154,6 +155,21 @@ header .menu {
 
 header .menu li {
   margin-right: 20px;
+}
+
+header .menu li a:hover {
+  color: #5363DB;
+  text-shadow: 1px 1px 3px #5363DB;
+}
+
+header .menu li a::after:hover {
+  content: '-';
+  color: #5363DB;
+  position: relative;
+  left: 50%;
+  top: 1em;
+  width: 20px;
+  height: 3px;
 }
 
 .bg1 {
